@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String imageURL="https://dancingwiththedeejay.files.wordpress.com/2016/01/arcade-fire.jpg?w=1000&h=800&crop=1";
+        String imageURL= "https://dancingwiththedeejay.files.wordpress.com/2016/01/arcade-fire.jpg?w=1000&h=800&crop=1";
         Picasso.with(this).load(imageURL).into(target);
 
         mUsernameEditText = (EditText) findViewById(R.id.usernameEditText);

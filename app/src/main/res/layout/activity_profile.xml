@@ -17,4 +17,34 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friendListListView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/newFriendEditText"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/usernameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/submitNewFriendButton"
+        android:layout_alignStart="@+id/submitNewFriendButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit New Friend"
+        android:id="@+id/submitNewFriendButton"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/newFriendEditText"
+        android:layout_alignRight="@+id/friendListListView"
+        android:layout_alignEnd="@+id/friendListListView"
+        android:onClick="addFriends"/>
 </RelativeLayout>
